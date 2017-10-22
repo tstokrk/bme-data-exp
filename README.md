@@ -7,8 +7,6 @@ Welcome to the Data Exploration miniproject. You will learn how to clean and pre
 
 ## Project Instructions
 
-### Instructions
-
 0. (Optional step) Fork the repository to your githab account. It allows you to upload the changes to your own github
 
 1. Clean all the previous copies of this repo (it could be downloaded by other students).
@@ -21,7 +19,7 @@ rm -rf bme-*
 
 2. Clone the repository to your local PC
 
-Go to your home directory, and clone the repository using link or your own (in case you made a copy - fork) 
+Go to your home directory, and clone the repository. In case you made a copy (fork) provide your own URL
 
 ```	
 cd
@@ -65,7 +63,7 @@ source activate NAME
 jupyter notebook data_exp_numpy.ipynb
 ```
   
-5. (optional) Commit and push all the changes to your own github repo 
+5. (Optional step) Commit and push all the changes to your own github repo 
 
 ```
 git commit -m "My update.."
