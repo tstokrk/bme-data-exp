@@ -11,61 +11,50 @@ Welcome to the Data Exploration miniproject. You will learn how to clean and pre
 
 1. Clean all the previous copies of this repo (it could be downloaded by other students).
 
-```	
-cd
-ls -all
-rm -rf bme-*
-```
+    ```
+    cd
+    ls -all
+    rm -rf bme-*
+    ```
 
 2. Clone the repository to your local PC
 
-Go to your home directory, and clone the repository. In case you made a copy (fork) provide your own URL
+    Go to your home directory, and clone the repository. In case you made a copy (fork) provide your own URL
+    ```
+    cd
+    git clone https://github.com/tstokrk/bme-data-exp.git
+    cd bme-data-exp
+    ```
 
-```	
-cd
-git clone https://github.com/tstokrk/bme-data-exp.git
-cd bme-data-exp
-```
-
-3. Create a new conda environment (it provide the necessary Python packages)
+3. Create a new conda environment (it provides the necessary Python packages)
 	
-All necessary packages are listed in requirements.yml file.
+    All necessary packages are listed in requirements.yml file, that defines dataexp env.
   
-Before you create the new env using conda, check if there is no different env with the same name on your PC.
+    Before you create the new dataexp env using conda, check if there is no different
+    env with the same name on your PC. Remove all env that can create a conflict with the new one
   
-```
-conda env list
-```
-
-Remove all env that can create a conflict with the new one
-
-```
-conda env remove --name [name]
-```
+    ```
+    conda env list
+    conda env remove --name dataexp
+    ```
   
-Create the new env using the package list from the provided file
+    Create the new env using the package list from the provided file
 	
-```
-conda env create -f requirements.yml
-source activate data-exp
-```
-  
- If you want to create the new env with the specific NAME
- 
- ```
-conda env create -n NAME -f requirements.yml 
-source activate NAME
-```
+    ```
+    conda env create -f requirements.yml
+    source activate dataexp
+    ```
+
 
 4. Open the Jupyter Notebook and follow the instructions
 	
-```
-jupyter notebook data_exp_numpy.ipynb
-```
+    ```
+    jupyter notebook dataexp.ipynb
+    ```
   
 5. (Optional step) Commit and push all the changes to your own github repo 
 
-```
-git commit -m "My update.."
-git push origin master
-```
+    ```
+    git commit -m "My update.."
+    git push origin master
+    ```
